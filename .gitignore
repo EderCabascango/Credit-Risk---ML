@@ -1,0 +1,77 @@
+# ==========================================
+# Git Ignore para Proyecto de Data Science
+# ==========================================
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+my_env/
+
+# Archivos de dependencias y cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+*.log
+
+# Configuración de VSCode y Jupyter
+.vscode/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# ==========================================
+# DATA
+# ==========================================
+# Se ignoran datasets grandes o temporales,
+# pero se permiten los CSV del proyecto.
+data/raw/
+data/interim/
+data/temp/
+data/external/
+# ❗ Permitimos subir los CSV principales
+!data/raw/
+!data/processed/
+!*.csv
+
+# ==========================================
+# Modelos y salidas
+# ==========================================
+models/
+notebooks/.ipynb_checkpoints/
+reports/
+outputs/
+plots/
+figures/
+
+# Configuración y entornos locales
+.env
+*.json
+*.yaml
+*.yml
+
+# Archivos de bases de datos o frameworks
+*.db
+*.sqlite3
+instance/
+__pycache__/
+
+# Archivos temporales de JupyterLab
+.jupyter/
+lab/
+.ipython/
+
+# Cachés y build
+.cache/
+*.egg-info/
+build/
+dist/
